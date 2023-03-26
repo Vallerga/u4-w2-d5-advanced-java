@@ -1,0 +1,60 @@
+Libreria/Archivio
+
+L'archivio deve poter contenere almeno 2 tipologie di file con proprietà sia comuni che speciali: Libri, Riviste.
+
+Caratteristiche comuni:
+- codice ISBN
+- titolo
+- Anno publicazione
+- numero pagine
+
+Solo Libri:
+- Autore
+- Genere
+
+Solo Riviste:
+- Periodicità[SETTIMANALE, MENSILE, SEMESTRALE}
+
+- scrivi struttura classi con queste proprietà <---- grosso modo sono qui il sabato mattina
+
+- pianifica progetto (andava fatto prima) <--- fatto tarda mattinata sabato
+
+creare algoritmo per contenere una lista o una mappa di questo tipo
+
+Chiedere cosa fare all'utente (inizialmente sarà solo una o 2 funzioni)
+
+Implementare funzionalità richieste, l'archivio deve essere in grado di:
+- Aggiungere un elemento
+
+deciso cosa fare (aggiungere elemento) si richiederà le informazioni per costruire l'elemento in questo ordine:
+Codice ISBN, Titolo, Anno Publicazione, Numero Pagine
+biforcazione: rivista o libro?
+se Libro si chiede: Autore o genere
+se Rivista si chiede: periodicità
+A questo punto genero l'elemento ( ho immagazinato le informazioni in variabili temporanee magari statiche)
+Lo immetto nell'archivio
+
+- rimozione di un elemento mediante codice ISBN
+richiesta dell'ISBN all'utente
+Destrutturare archivio per ottenere selezione di valori ISBN
+ciclo collezione usando funzionalità proprie oppure Stream(filter, equal, uguaglianza, itero ricercando doppioni, etc)
+identificato il ISBN posso andare ad associarlo all'oggetto/elemento
+Lo elimino
+
+- ricerca di un elemento tramite ISBN
+
+simile al precedente, ma non elimino! semplicemente lo stampo in console
+
+- ricerca per anno di pubblicazione
+
+algoritmo ricerca simile (credo) ma applicato per anno pubblicazione
+
+- ricercaper Autore
+
+algoritmo ricerca simile (credo) ma applicato per Autore
+
+<--- questi sono importantissimi ma non so se riesco ad implementarli
+
+- Salvataggio su file
+
+- Caricamento dal disco
