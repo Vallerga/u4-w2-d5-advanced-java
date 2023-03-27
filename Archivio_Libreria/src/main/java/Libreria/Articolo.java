@@ -7,9 +7,9 @@ import lombok.ToString;
 @AllArgsConstructor
 @Getter
 @ToString
-public class Articolo {
+public abstract class Articolo {
 	
-	private String cod_ISBN;
+	private StringBuilder cod_ISBN;
 	private String titolo;
 	private int pub_year;
 	private	int num_pag;
